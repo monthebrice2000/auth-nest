@@ -1,0 +1,63 @@
+T http://localhost:3000/api/auth/user
+Accept: application/json
+
+###
+
+POST http://localhost:3000/api/auth/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "user" : {
+    "email": "monhe@gmail.come",
+    "password" : "monthee"
+  }
+}
+
+###
+
+POST http://localhost:3000/api/auth/register
+Accept: application/json
+Content-Type: application/json
+
+{
+  "user" : {
+    "first_name" : "montheeee",
+    "last_name" : "brice",
+    "email": "monhe@gmail.com",
+    "password" : "monthe",
+    "confirmPassword" : "monthe"
+  }
+}
+
+POST http://localhost:3000/api/auth/reset/eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1vbnRoZUBnbWFpbC5jb20iLCJpYXQiOjE2NDU5MjQxOTcsImV4cCI6MTY0NTkyNTA5N30.R0xDyZAnpLvOmLuw_3Fxs19DQeVh6s_Q-hnWOpLDW2k
+Accept: application/json
+Content-Type: application/json
+
+{
+  "reset" : {
+    "token" : "eee",
+    "password" : "bmonthee",
+    "confirmPassword" : "bmonthee"
+  }
+}
+
+###
+POST http://localhost:3000/api/auth/forgot_password
+Accept: application/json
+Content-Type: application/json
+
+{   "reset" : {     "email" : "monthe@gmail.com"   } }
+
+###
+
+POST http://localhost:3000/api/auth/login
+Accept: application/json
+Content-Type: application/json
+
+{
+  "user" : {
+    "email" : "monthe@gmail.com",
+    "password" : "bmonthee"
+  }
+}

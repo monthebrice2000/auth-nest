@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "paths": {
+      "@models/*": ["./src/tasks/models/*", "./src/auth/models/*"],
+      "@controllers/*": ["./src/tasks/controllers/*", "./src/auth/controllers/*"],
+      "@repositories/*": ["./src/repositories/*", "./src/auth/repositories/*"],
+      "@middlewares/*": ["./src/middlewares/*"],
+      "@services/*": ["./src/tasks/services/*", "./src/auth/services/*"],
+      "@modules/*": ["./src/tasks/*", "./src/auth/*"],
+      "@configs/*": ["./src/configs/*"],
+      "@app/*": ["./src/*"],
+      "@decorators/*": ["./src/decorators/*"],
+      "@interceptors/*": ["./src/interceptors/*"]
+    },
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false
+  }
+}
