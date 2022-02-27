@@ -1,0 +1,9 @@
+[build.environment]
+hostname = "sql11.freesqldatabase.com"
+port = 3306
+user = "sql11475622"
+password = "snH3WP1bZx"
+database_mysql = "sql11475622"
+secret = "tontonlaforce"
+port_app = 3010
+jwt_secret = "toto"

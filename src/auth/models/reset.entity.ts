@@ -11,7 +11,7 @@ export class ResetEntity {
   @PrimaryGeneratedColumn('increment')
   id: number;
 
-  @Column({ length: 5000, type: 'varchar', unique: true, nullable: false })
+  @Column({ length: 500, type: 'varchar', unique: true, nullable: false })
   token: string;
 
   @Column({ type: 'varchar', unique: true, nullable: false })
